@@ -4,28 +4,38 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        NumberSystem baseSystem1 = new NumberSystem("Name1", 10, "Descr1");
-        NumberSystem baseSystem2 = new NumberSystem("Name2", 8, "Descr2");
+        PositionalNumberSystem binarySystem = new PositionalNumberSystem("Binary", 2, "Binary system", 2, true);
+        NonPositionalNumberSystem romanSystem = new NonPositionalNumberSystem("Roman", 10, "Roman  system", "X", false);
+        MixedNumberSystem mixedSystem = new MixedNumberSystem("Mixed", 16, "Mixed system", "ABC", "I", true);
 
-        PositionalNumberSystem positionalSystem1 = new PositionalNumberSystem("Name3", 2, "Descr3", 2, true);
-        PositionalNumberSystem positionalSystem2 = new PositionalNumberSystem("Name4", 10, "Descr4", 10, false);
+        NumberSystemCollection systemCollection = new NumberSystemCollection();
+        systemCollection.AddSystem(binarySystem);
+        systemCollection.AddSystem(romanSystem);
+        systemCollection.AddSystem(mixedSystem);
 
-        NonPositionalNumberSystem nonPositionalSystem1 = new NonPositionalNumberSystem("Name5", 16, "Descr5", "Type1", true);
-        NonPositionalNumberSystem nonPositionalSystem2 = new NonPositionalNumberSystem("Name6", 10, "Descr6", "Type2", false);
+        foreach (var system in systemCollection.Systems)
+        {
+            Console.WriteLine(system);
+        }
 
-        MixedNumberSystem mixedSystem1 = new MixedNumberSystem("Name7", 8, "Descr7", "PositionalPart1", "NonPositionalPart1", true);
-        MixedNumberSystem mixedSystem2 = new MixedNumberSystem("Name8", 16, "Descr8", "PositionalPart2", "NonPositionalPart2", false);
+        Console.WriteLine("Delete element #2");
+        systemCollection.DeleteSystem(1);
+        foreach (var system in systemCollection.Systems)
+        {
+            Console.WriteLine(system);
+        }
 
-        Console.WriteLine(baseSystem1.ToString());
-        Console.WriteLine(baseSystem2.ToString());
+        Console.WriteLine("Edit element 1");
 
-        Console.WriteLine(positionalSystem1.ToString());
-        Console.WriteLine(positionalSystem2.ToString());
+        binarySystem.NumberOfDigits = 3;
 
-        Console.WriteLine(nonPositionalSystem1.ToString());
-        Console.WriteLine(nonPositionalSystem2.ToString());
+        systemCollection.EditSystem(0, new NonPositionalNumberSystem("Octal", 8, "Base-8 system", "Oct", true));
 
-        Console.WriteLine(mixedSystem1.ToString());
-        Console.WriteLine(mixedSystem2.ToString());
+        foreach (var system in systemCollection.Systems)
+        {
+            Console.WriteLine(system);
+        }
+
+        Console.ReadLine();
     }
 }

@@ -1,0 +1,14 @@
+D:\ProbenAufgabeHeise_Gruppe\Lab5_c\Lab5_c\obj\Debug\net6.0\Lab5_c.GeneratedMSBuildEditorConfig.editorconfig
+D:\ProbenAufgabeHeise_Gruppe\Lab5_c\Lab5_c\obj\Debug\net6.0\Lab5_c.AssemblyInfoInputs.cache
+D:\ProbenAufgabeHeise_Gruppe\Lab5_c\Lab5_c\obj\Debug\net6.0\Lab5_c.AssemblyInfo.cs
+D:\ProbenAufgabeHeise_Gruppe\Lab5_c\Lab5_c\obj\Debug\net6.0\Lab5_c.csproj.CoreCompileInputs.cache
+D:\ProbenAufgabeHeise_Gruppe\Lab5_c\Lab5_c\bin\Debug\net6.0\Lab5_c.exe
+D:\ProbenAufgabeHeise_Gruppe\Lab5_c\Lab5_c\bin\Debug\net6.0\Lab5_c.deps.json
+D:\ProbenAufgabeHeise_Gruppe\Lab5_c\Lab5_c\bin\Debug\net6.0\Lab5_c.runtimeconfig.json
+D:\ProbenAufgabeHeise_Gruppe\Lab5_c\Lab5_c\bin\Debug\net6.0\Lab5_c.dll
+D:\ProbenAufgabeHeise_Gruppe\Lab5_c\Lab5_c\bin\Debug\net6.0\Lab5_c.pdb
+D:\ProbenAufgabeHeise_Gruppe\Lab5_c\Lab5_c\obj\Debug\net6.0\Lab5_c.dll
+D:\ProbenAufgabeHeise_Gruppe\Lab5_c\Lab5_c\obj\Debug\net6.0\refint\Lab5_c.dll
+D:\ProbenAufgabeHeise_Gruppe\Lab5_c\Lab5_c\obj\Debug\net6.0\Lab5_c.pdb
+D:\ProbenAufgabeHeise_Gruppe\Lab5_c\Lab5_c\obj\Debug\net6.0\Lab5_c.genruntimeconfig.cache
+D:\ProbenAufgabeHeise_Gruppe\Lab5_c\Lab5_c\obj\Debug\net6.0\ref\Lab5_c.dll
